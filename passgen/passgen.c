@@ -19,18 +19,18 @@ int number_of_char = TOTAL_CHAR;
 char* tab_of_char;
 
 int calcul_number_of_char() {
-    int number_of_char = TOTAL_CHAR;
+    int number = TOTAL_CHAR;
 
     if(!number_option)
-        number_of_char -= 10;
+        number -= 10;
     if(!special_char_option)
-        number_of_char -= 27;
+        number -= 27;
     if(!uppercase_option)
-        number_of_char -= 26;
+        number -= 26;
     if(!lowercase_option)
-        number_of_char -= 26;
+        number -= 26;
 
-    return number_of_char;
+    return number;
 }
 
 int is_password_include_lowercase(char* password) {
